@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
+    font-weight: lighter;
+}
+.weather {
+    position: relative;
+    height: 175px;
+    width: 400px;
+    background: #7abcff;
+    background: -moz-radial-gradient(center, ellipse cover, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee));
+    background: -webkit-radial-gradient(center, ellipse cover, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    background: -o-radial-gradient(center, ellipse cover, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    background: radial-gradient(ellipse at center, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 );
+    border-radius: 10px;
+    border: 3px solid #FFFFFF;
+    padding: 10px 20px;
+	float:left;
+    margin-left: 20px;
+}
+.weather::after{
+  width: 400px;
+  height: 5px;
+  background: red;
+  position:absolute;
+  top:15px;
+}
+.city h1{
+  padding: 0;
+  margin: 5px 0px;
+  font-size: 12pt;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+.details{
+  width: 50%;
+  float: left;
+  padding: 10px;
+  color: #FFFFFF;
+  margin: 5px 0;
+}
+.temp{
+  font-size: 40pt;
+  text-align: center;
+  font-weight: lighter;
+}
+.clearfix{
+  clear:both;
+  width: 100%;
+  border-top: 3px solid #FFFFFF;
+
+}
